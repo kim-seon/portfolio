@@ -72,7 +72,6 @@ p {
 #navbar {
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-grey);
   align-items: center;
   color: var(--color-base-text);
   padding: 16px;
@@ -102,4 +101,31 @@ p {
   color: var(--color-hlgt-text);
   font-weight: var(--weight-semi-bold);
   border-bottom: 3px solid var(--color-hlgt2-text);
+}
+
+#navbar,
+#home {
+  background: url("images/home-background.png") center/cover no-repeat;
+}
+
+#home {
+  padding: 20px;
+  text-align: left;
+}
+
+.home__avatar {
+  width: 150px;
+  border-radius: 50%;
+}
+
+#home__inform {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  padding-left: 20px;
+  line-height: 300%;
+}
+
+.home__job {
+  margin-top: -20px;
 }
