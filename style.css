@@ -1,0 +1,21 @@
+/*Global*/
+:root {
+  --color-grey: #eceff1;
+  --color-base-text: #8eacbb;
+  --color-hlgt-text: #34515e;
+  --color-hlgt2-text: #00bcd4;
+
+  --font-large: 40px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
