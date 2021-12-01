@@ -4,6 +4,7 @@
   --color-base-text: #8eacbb;
   --color-hlgt-text: #34515e;
   --color-hlgt2-text: #00bcd4;
+  --color-black: #4d4d4d;
 
   --font-large: 40px;
   --font-medium: 28px;
@@ -18,4 +19,32 @@
 
 * {
   box-sizing: border-box;
+}
+
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  color: var(--color-black);
+  margin: 16px 0px;
+}
+
+h2 {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-semi-bold);
+  color: var(--color-black);
+  margin: 8px 0;
+}
+
+h3 {
+  font-size: var(--font-regular);
+  font-weight: var(--font-regular);
+  color: var(--color-black);
+  margin: 8px 0;
+}
+
+p {
+  font-size: var(--font-regular);
+  font-weight: var(--font-regular);
+  color: var(--color-black);
+  margin: 4px 0;
 }
