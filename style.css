@@ -65,6 +65,12 @@ p {
   margin: 4px 0;
 }
 
+button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
 #navbar img {
   width: 30px;
 }
@@ -128,4 +134,10 @@ p {
 
 .home__job {
   margin-top: -20px;
+}
+
+.home__contact {
+  font-size: var(--font-micro);
+  background-color: var(--color-hlgt2-text);
+  color: var(--color-grey);
 }
