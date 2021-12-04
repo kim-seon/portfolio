@@ -34,14 +34,15 @@
     <section id="home">
         <img src="images/profile.jpg" alt="Sun's profile photo" class="home__avatar"/>
         <div id="home__inform">
-            <h1 class="home__name">KIM SEON</h1>
+            <h2>Hi, I am</h2>
+            <h1 class="home__name">KIM SUN, a developer</h1>
             <h3 class="home__bd">August 9, 1999 </h3>
-            <p class="home__job">programmer</p>
             <button class="home__contact">contact me</button>
         </div>
+        
     </section>
     <!-- About -->
-    <section id="about">
+    <section id="about" class="section">
         <h1>ABOUT ME</h1>
         <p>강남대학교를 졸업했고, 프론트엔드를 공부중이며 포트폴리오를 만들기 위해 여러 프로젝트 제작에 힘쓰고 있다.</p>
         <div class="about__majors">
@@ -49,31 +50,42 @@
                 <div class="major__icon">
                     <i class="fab fa-html5"></i>
                 </div>
-                <div class="major__title">front-end</div>
+                <span class="major__title">front-end</span>
                 <div class="major__description">
-                    HTML, CSS, JavaScript
+                    HTML<br/> CSS<br/> JavaScript
                 </div>
             </div>
             <div class="major">
                 <div class="major__icon">
                     <i class="fas fa-mobile"></i>
                 </div>
-                <div class="major__title">mobile</div>
+                <span class="major__title">mobile</span>
                 <div class="major__description">
-                    Android, Java, Kotlin
+                    Android<br/> Java<br/> Kotlin
+                </div>
+            </div>
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fas fa-server"></i>
+                </div>
+                <span class="major__title">back-end</span>
+                <div class="major__description">
+                    Java<br/> JavaScript
                 </div>
             </div>
         </div>
-        <div class="about__jobs">
+        <!--<div class="about__jobs">
             <div class="job">
                 <img src="images/logo.png" alt="knu" class="school__logo">
-                <p class="school__name">Kangnam univ.</p>
+                <div class="job__description">
                 <p class="school__period">2018 March - 2023 Feb.</p>
+                <p class="school__name">Kangnam univ.</p>
             </div>
+            </div>-->
         </div>
     </section>
     <!-- Skills -->
-    <section id="skills">
+    <section id="skills" class="section">
         <h1>SKILLS</h1>
         <p>팀과 협력해 일을 수월하게 해나갈 수 있으며, 혼자서도 일을 해결하는 데에도 어려움이 없습니다. 새로운 언어를 배우는 데에 늘 관심이 많으며 두려움이 없습니다.</p>
         <div class="skillset">
@@ -126,7 +138,7 @@
         </div>
     </section>
     <!-- Works -->
-    <section id="works">
+    <section id="works" class="section">
         <h1>MY WORKS</h1>
         <h3>Projects</h3>
         <div class="work__categories">
@@ -139,7 +151,7 @@
         </div>
     </section>
     <!-- Contact -->
-    <section id="contact">
+    <section id="contact" class="section">
         <h1 class="contact__title">CONTACT ME</h1>
         <h2 class="contact__email">7bhz_@naver.com</h2>
         <div class="contact__links">

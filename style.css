@@ -5,6 +5,9 @@
   --color-hlgt-text: #34515e;
   --color-hlgt2-text: #00bcd4;
   --color-black: #4d4d4d;
+  --color-white: #ffffff;
+  --color-light-white: #eeeeee;
+  --color-dark-white: #bdbdbd;
 
   --font-large: 40px;
   --font-medium: 28px;
@@ -15,6 +18,8 @@
   --weight-bold: 700;
   --weight-semi-bold: 600;
   --weight-regular: 400;
+
+  --animation-duration: 300ms;
 }
 
 * {
@@ -25,9 +30,11 @@ body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
   cursor: default;
+  color: var(--color-black);
 }
 
 a {
+  font-size: var(--font-medium);
   text-decoration: none;
   color: var(--color-base-text);
 }
@@ -73,6 +80,7 @@ button {
 
 #navbar img {
   width: 30px;
+  line-height: 30px;
 }
 
 #navbar {
@@ -80,7 +88,7 @@ button {
   justify-content: space-between;
   align-items: center;
   color: var(--color-base-text);
-  padding: 16px;
+  padding: 20px 50px;
 }
 
 .navbar__menu {
@@ -115,25 +123,24 @@ button {
 }
 
 #home {
-  padding: 20px;
-  text-align: left;
+  display: flex;
+  padding: 50px;
+  text-align: center;
+  justify-content: center;
 }
 
 .home__avatar {
-  width: 150px;
-  border-radius: 50%;
+  width: 200px;
+  height: fit-content;
+  border-radius: 20px;
 }
 
 #home__inform {
   display: inline-block;
   vertical-align: top;
   text-align: left;
-  padding-left: 20px;
-  line-height: 300%;
-}
-
-.home__job {
-  margin-top: -20px;
+  margin-left: 50px;
+  line-height: 250%;
 }
 
 .home__contact {
@@ -141,3 +148,70 @@ button {
   background-color: var(--color-hlgt2-text);
   color: var(--color-grey);
 }
+
+.section {
+  padding: 50px;
+  text-align: center;
+  margin: auto;
+}
+
+.about__majors {
+  display: flex;
+  margin: 40px 0;
+  justify-content: space-evenly;
+}
+
+.major__icon {
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  font-size: 30px;
+  text-align: center;
+  margin: auto;
+  color: var(--color-hlgt-text);
+}
+
+.major__icon i {
+  transition: all var(--animation-duration) ease;
+}
+
+.major__icon:hover i {
+  transform: scale(1.2);
+}
+
+.major__title {
+  color: var(--color-black);
+  font-size: var(--font-regular);
+  font-weight: var(--weight-semi-bold);
+  border-bottom: 2px solid var(--color-hlgt2-text);
+}
+
+.major__description {
+  font-size: var(--font-micro);
+  margin-top: 15px;
+}
+
+/*.job img {
+  width: 50px;
+}
+
+.job {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.job__description {
+  margin: 0 16px;
+  text-align: left;
+}
+
+.school__period {
+  color: var(--color-black);
+  font-size: var(--font-micro);
+}
+
+.school__name {
+  color: var(--color-black);
+  font-size: var(--font-small);
+}*/
