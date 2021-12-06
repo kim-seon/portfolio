@@ -9,7 +9,7 @@
     <meta name="author" content="Sun">
     <link rel="icon" type="image/png" href="images/favicon.png">
     <script src="https://kit.fontawesome.com/45ed3d3825.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Source+Serif+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
 </head>
@@ -42,7 +42,7 @@
         
     </section>
     <!-- About -->
-    <section id="about" class="section">
+    <section id="about" class="section section__container">
         <h1>ABOUT ME</h1>
         <p>강남대학교를 졸업했고, 프론트엔드를 공부중이며 포트폴리오를 만들기 위해 여러 프로젝트 제작에 힘쓰고 있다.</p>
         <div class="about__majors">
@@ -86,18 +86,19 @@
     </section>
     <!-- Skills -->
     <section id="skills" class="section">
-        <h1>SKILLS</h1>
-        <p>팀과 협력해 일을 수월하게 해나갈 수 있으며, 혼자서도 일을 해결하는 데에도 어려움이 없습니다. 새로운 언어를 배우는 데에 늘 관심이 많으며 두려움이 없습니다.</p>
-        <div class="skillset">
+        <div class="section__container">
+            <h1>SKILLS</h1>
+            <p>팀과의 유연한 소통으로 협력해 일을 수월하게 해결할 수 있으며, 혼자서 일을 수행하는 데에도 어려움이 없습니다. 또한 새로운 언어를 배우는 데에 늘 관심이 많으며, 도전에 두려움이 없습니다.</p>
+            <div class="skillset">
             <div class="skillset__left">
-                <h3 class="skillset__title">skills</h3>
+                <span class="skillset__title">skills</span>
                 <div class="skill">
                     <div class="skill_description">
                         <span>HTML</span>
                         <span>60%</span>
                     </div>
                     <div class="skill__bar">
-                        <div class="skill__value"></div>
+                        <div class="skill__value" style="width: 60%;"></div>
                     </div>
                 </div>
                 <div class="skill">
@@ -106,7 +107,7 @@
                         <span>50%</span>
                     </div>
                     <div class="skill__bar">
-                        <div class="skill__value"></div>
+                        <div class="skill__value" style="width: 50%;"></div>
                     </div>
                 </div>
                 <div class="skill">
@@ -115,13 +116,13 @@
                         <span>40%</span>
                     </div>
                     <div class="skill__bar">
-                        <div class="skill__value"></div>
+                        <div class="skill__value" style="width: 40%;"></div>
                     </div>
                 </div>
             </div>
             <div class="skillset__right">
                 <div class="tools">
-                    <h3 class="skillset__title">Tools</h3>
+                    <span class="skillset__title">Tools</span>
                     <ul class="tools__list">
                         <li><span>Visual Studio Code</span></li>
                         <li><span>Android Studio tools</span></li>
@@ -129,12 +130,13 @@
                     </ul>
                 </div>
                 <div class="etc">
-                    <h3 class="skillset__title">Etc</h3>
+                    <span class="skillset__title">Etc</span>
                     <ul class="etc__list">
                         <li><span>Git</span></li>
                     </ul>
                 </div>
             </div>
+        </div>
         </div>
     </section>
     <!-- Works -->
