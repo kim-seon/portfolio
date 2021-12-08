@@ -98,11 +98,12 @@ button {
   padding: 20px 50px;
   background-color: transparent;
   transition: all var(--animation-duration) ease-in-out;
+  z-index: 1;
 }
 
 #navbar.navbar--dark {
   background-color: var(--color-grey);
-  padding: 8px;
+  padding: 2px;
 }
 
 .navbar__menu {
