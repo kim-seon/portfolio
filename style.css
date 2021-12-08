@@ -80,6 +80,7 @@ button {
   border: none;
   cursor: pointer;
   outline: none;
+  background-color: transparent;
 }
 
 #navbar img {
@@ -119,6 +120,15 @@ button {
   color: var(--color-hlgt-text);
   font-weight: var(--weight-semi-bold);
   border-bottom: 3px solid var(--color-hlgt2-text);
+}
+
+.navbar__toggle-btn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 22px;
+  color: var(--color-base-text);
+  display: none;
 }
 
 #navbar,
@@ -372,4 +382,28 @@ button {
 
 .contact__rights {
   font-size: var(--font-micro);
+}
+
+@media screen and (max-width: 768px) {
+  /* 차이점들만 뽑아진 것들만 */
+
+  .navbar__toggle-btn {
+    display: block;
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar__menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+
+  .about__majors {
+    flex-direction: column;
+  }
 }
