@@ -27,6 +27,16 @@ homeContactBtn.addEventListener('click', () => {
     scrollIntoView('#contact');
 });
 
+/*스크롤하면 홈이 투명해짐*/
+const home = document.querySelector('#home');
+const home__cn = document.querySelector('.home__container');
+const homeHeight =home.getBoundingClientRect().height;
+document.addEventListener('scroll', () => {
+    home__cn.style.opacity = 1 - window.scrollY / homeHeight;
+});
+
+
+
 function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({behavior: 'smooth'});

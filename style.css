@@ -103,7 +103,7 @@ button {
 
 #navbar.navbar--dark {
   background-color: var(--color-grey);
-  padding: 2px;
+  padding: 5px;
 }
 
 .navbar__menu {
