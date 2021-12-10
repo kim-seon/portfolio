@@ -35,7 +35,19 @@ document.addEventListener('scroll', () => {
     home__cn.style.opacity = 1 - window.scrollY / homeHeight;
 });
 
+/*스크롤 내리면 화살표 보임*/
+const arrowUp = document.querySelector('.arrow-up');
+document.addEventListener('scroll', () => {
+    if(window.scrollY > homeHeight/2) {
+        arrowUp.classList.add('visible');
+    } else {
+        arrowUp.classList.remove('visible');
+    }
+});
 
+arrowUp.addEventListener('click', () => {
+    scrollIntoView('#home');
+});
 
 function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
