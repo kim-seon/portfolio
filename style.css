@@ -119,11 +119,7 @@ button {
   padding: 4px 10px;
   margin: 0 4px;
   cursor: pointer;
-}
-
-.navbar_menu_item.active {
-  color: var(--color-hlgt-text);
-  font-weight: var(--weight-semi-bold);
+  border-bottom: 3px solid transparent;
 }
 
 .navbar_menu_item:hover {
@@ -365,13 +361,13 @@ button {
   padding: 5px 40px;
 }
 
-.category__btn.active,
+.category__btn.selected,
 .category__btn:hover {
   background-color: var(--color-hlgt2-text);
   color: var(--color-white);
 }
 
-.category__btn.active .category__count,
+.category__btn.selected .category__count,
 .category__btn:hover .category__count {
   opacity: 1;
   top: 0;
