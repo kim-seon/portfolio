@@ -77,10 +77,11 @@ p {
 }
 
 button {
+  background-color: transparent;
   border: none;
   cursor: pointer;
   outline: none;
-  background-color: transparent;
+  padding: 0;
 }
 
 #navbar img {
@@ -132,7 +133,7 @@ button {
   position: absolute;
   top: 20px;
   right: 30px;
-  font-size: 22px;
+  font-size: 20px;
   color: var(--color-base-text);
   display: none;
 }
@@ -165,7 +166,7 @@ button {
 }
 
 .home__contact {
-  font-size: var(--font-micro);
+  font-size: var(--font-small);
   background-color: var(--color-base-text);
   color: var(--color-grey);
 }
@@ -181,9 +182,14 @@ button {
   margin: auto;
 }
 
+.major {
+  margin-bottom: 30px;
+}
+
 .about__majors {
   display: flex;
-  margin: 40px 0;
+  margin-top: 30px;
+  margin-bottom: 0px;
   justify-content: space-evenly;
 }
 
@@ -359,6 +365,7 @@ button {
   border-radius: 4px;
   font-size: var(--font-micro);
   padding: 5px 40px;
+  position: relative;
 }
 
 .category__btn.selected,
@@ -381,9 +388,9 @@ button {
   height: 16px;
   line-height: 16px;
   color: var(--color-white);
-  position: relative;
+  position: absolute;
   top: -20px;
-  left: 4px;
+  right: 12px;
   opacity: 0;
   transition: all var(--animation-duration) ease-in;
 }
@@ -400,6 +407,10 @@ button {
 
 .contact__title {
   margin: 32px 0;
+}
+
+.contact__email {
+  font-size: var(--font-small);
 }
 
 .contact__links {
@@ -442,6 +453,14 @@ button {
 @media screen and (max-width: 768px) {
   /* 차이점들만 뽑아진 것들만 */
 
+  :root {
+    --font-large: 32px;
+    --font-medium: 22px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+  }
+
   #home__inform {
     margin-left: 0px;
     text-align: center;
@@ -468,7 +487,25 @@ button {
     display: block;
   }
 
+  .section {
+    padding: 16px;
+    padding-top: 50px;
+  }
+
   .about__majors {
     flex-direction: column;
+  }
+
+  .category__btn {
+    margin: 4px 0;
+  }
+
+  .arrow-up {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    right: 16px;
+    bottom: 16px;
   }
 }
