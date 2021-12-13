@@ -104,7 +104,7 @@ button {
 
 #navbar.navbar--dark {
   background-color: var(--color-grey);
-  padding: 10px 20px;
+  padding: 5px 10px;
 }
 
 .navbar__menu {
@@ -121,6 +121,11 @@ button {
   margin: 0 4px;
   cursor: pointer;
   border-bottom: 3px solid transparent;
+}
+
+.navbar_menu_item.active {
+  color: var(--color-hlgt-text);
+  font-weight: var(--weight-semi-bold);
 }
 
 .navbar_menu_item:hover {
@@ -169,6 +174,7 @@ button {
   font-size: var(--font-small);
   background-color: var(--color-base-text);
   color: var(--color-grey);
+  padding: 4px;
 }
 
 .section {
