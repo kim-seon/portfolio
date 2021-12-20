@@ -157,6 +157,7 @@ button {
 }
 
 .avatar__container {
+  display: inline-block;
   width: 200px;
   height: auto;
 }
