@@ -156,9 +156,14 @@ button {
   justify-content: center;
 }
 
-.home__avatar {
+.avatar__container {
   width: 200px;
-  height: fit-content;
+  height: auto;
+}
+
+.home__avatar {
+  width: 100%;
+  height: 100%;
   border-radius: 20px;
 }
 
